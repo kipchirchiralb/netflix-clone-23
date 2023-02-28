@@ -142,3 +142,45 @@ footer a {
 footer p {
   color: rgb(105, 102, 102);
 }
+/* above - desktop /large screens */
+
+/* firts media query - laptop/tables */
+@media screen and (max-width: 960px) {
+  .get-started-form {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .get-started-form input[type="email"] {
+    width: 100%;
+    padding: 12px 5px;
+  }
+  .intro p {
+    font-size: 26px;
+    width: 500px;
+    margin: 20px auto;
+  }
+
+  /* section */
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section.kids {
+    flex-direction: column;
+  }
+  .section.download {
+    flex-direction: column-reverse;
+  }
+  .link-groups {
+    gap: 150px;
+  }
+}
+
+/* smaller devices */
+
+@media screen and (max-width: 740px) {
+  .link-groups {
+    flex-wrap: wrap;
+  }
+}
